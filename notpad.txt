@@ -35,6 +35,13 @@ def saveFile():
 
         root.title(os.path.basename(file) + "-Notepad")
         print("Files saved")
+     else:
+      # save the file
+        f= open(file,"w")
+        f.write(TextArea.get(1.0,END))
+        f.close()
+
+     
 
 def separatorFile():
   pass
